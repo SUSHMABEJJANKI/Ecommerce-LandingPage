@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - E-commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Tabs (hidden until login) -->
+    <nav id="navBar" style="display: none;">
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#account" onclick="openAccount()">My Account</a></li>
+            <li><a href="#" onclick="logout()">Logout</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to ShopEasy</h1>
+        <p>Discover exclusive deals and high-quality products just for you.</p>
+        <button onclick="openSignup()">Get Started</button>
+    </section>
+
+    <!-- Login and Signup Forms -->
+    <div id="signupForm" class="form-popup">
+        <h2>Sign Up</h2>
+        <input type="text" id="signupName" placeholder="Full Name">
+        <input type="email" id="signupEmail" placeholder="Email">
+        <input type="text" id="signupPhone" placeholder="Phone Number">
+        <input type="text" id="signupUsername" placeholder="Username">
+        <div class="password-field">
+            <input type="password" id="signupPassword" placeholder="Password">
+            <span class="toggle-password" onclick="togglePassword('signupPassword')">👁️</span>
+        </div>
+        <input type="password" id="signupConfirmPassword" placeholder="Confirm Password">
+        <button onclick="signup()">Submit</button>
+        <button onclick="openLogin()">Already have an account? Login</button>
+    </div>
+
+    <div id="loginForm" class="form-popup">
+        <h2>Login</h2>
+        <input type="text" id="loginUsername" placeholder="Username">
+        <div class="password-field">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <span class="toggle-password" onclick="togglePassword('loginPassword')">👁️</span>
+        </div>
+        <button onclick="login()">Login</button>
+        <a href="#">Forgot Password?</a>
+    </div>
+
+    <!-- Account Section -->
+    <section id="accountSection" style="display: none;">
+        <h3>My Account</h3>
+        <p><strong>Name:</strong> <span id="accountName"></span></p>
+        <p><strong>Email:</strong> <span id="accountEmail"></span></p>
+        <p><strong>Phone:</strong> <span id="accountPhone"></span></p>
+        <button onclick="closeAccount()">Close</button>
+    </section>
+
+    <!-- Main Content Section -->
+    <section id="contentSection" style="display: none;">
+        <h2>Welcome to Our Shopping Site!</h2>
+        <div class="product-info">
+            <p>Discover amazing products, exclusive deals, and more.</p>
+            <div class="product-gallery">
+                <img src="images/kids.png" alt="Product 1">
+                <img src="images/women.png" alt="Product 2">
+                <img src="images/men.jpg" alt="Product 3">
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
