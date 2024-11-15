@@ -1,0 +1,200 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfdfe;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #a3cef1; /* Pastel blue */
+    color: #ffffff;
+    padding: 10px;
+    text-align: right;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: #f3eac2; /* Pastel yellow */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f8d7da; /* Pastel pink */
+    color: #333;
+    padding: 50px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin: 0 0 10px;
+    color: #6b5b95; /* Pastel purple */
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 0 0 20px;
+    color: #5f9ea0;
+}
+
+.hero button {
+    background-color: #b8e1dd; /* Pastel mint */
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero button:hover {
+    background-color: #c5e4e7; /* Lighter pastel mint */
+}
+
+/* Form Popup Styling */
+.form-popup {
+    display: none;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    margin: 50px auto;
+}
+
+.form-popup h2 {
+    color: #6b5b95; /* Pastel purple */
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.form-popup input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-popup button {
+    background-color: #b8e1dd; /* Pastel mint */
+    border: none;
+    color: #333;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.form-popup button:hover {
+    background-color: #c5e4e7; /* Lighter pastel mint */
+}
+
+/* Password Field with Eye Icon */
+.password-field {
+    position: relative;
+}
+
+.password-field input {
+    width: 100%;
+    padding-right: 35px;
+}
+
+.password-field .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+/* Account Section */
+#accountSection {
+    background-color: #f3eac2; /* Pastel yellow */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+#accountSection h3 {
+    color: #6b5b95; /* Pastel purple */
+}
+
+/* Content Section */
+#contentSection {
+    background-color: #e2ecef; /* Soft pastel blue-gray */
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+#contentSection h2 {
+    color: #6b5b95; /* Pastel purple */
+}
+
+.product-info p {
+    color: #5f9ea0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.product-gallery img {
+    width: 100px;
+    height: auto;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+/* Button Styling */
+button {
+    background-color: #b8e1dd; /* Pastel mint */
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #c5e4e7; /* Lighter pastel mint */
+}
+
+/* Additional Styling for Links in Forms */
+.form-popup a {
+    color: #5f9ea0;
+    text-decoration: underline;
+    font-size: 14px;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.form-popup a:hover {
+    color: #6b5b95; /* Pastel purple */
+}
